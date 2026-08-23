@@ -314,11 +314,12 @@ button:disabled {
 
 #ascii-face {
   font-family: monospace;
-  font-size: 1.4rem;
+  font-size: 0.45rem; 
   font-weight: bold;
-  text-shadow: 0 0 15px #ff0000;
-  line-height: 1.1;
+  text-shadow: 0 0 10px #ff0000;
+  line-height: 0.85;  
   text-align: center;
+  white-space: pre;   
 }
 
 @keyframes shake {
