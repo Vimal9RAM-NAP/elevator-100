@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator 100: Descent into Fear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- START SCREEN OVERLAY -->
+  <div id="start-screen" class="panel creepy-frame">
+    <div class="static-overlay"></div>
+    <h1 class="glitch-title" data-text="FLOOR 100">FLOOR 100</h1>
+    <p class="subtitle">ELEVATOR OVERRIDE & RECOVERY SYSTEM</p>
+    
+    <!-- HIGH SCORE DISPLAY -->
+    <div id="high-score-display" style="color: var(--accent-red); font-size: 0.9rem; font-weight: bold; letter-spacing: 2px;">
+      HIGHEST ASCENT: FL 01
+    </div>
+
+    <div class="instructions-box">
+      <p class="warning-header">⚠️ SYSTEM BREACH DETECTED</p>
+      <p>• The lower shaft has collapsed. Descent is impossible.</p>
+      <p>• The entity ascends at <strong>3 meters per second</strong>.</p>
+      <p>• Solve sub-system failures before hydraulic seal breaches.</p>
+    </div>
+
+    <div class="menu-actions">
+      <button id="start-btn" class="btn-creepy primary">BEGIN ASCENT</button>
+      <a href="https://itch.io" target="_blank" rel="noopener" class="btn-creepy secondary">RATE ON ITCH.IO</a>
+      <button id="share-btn" class="btn-creepy tertiary">DISTRESS SIGNAL (SHARE)</button>
+    </div>
+    <p id="share-toast" class="toast-hidden">DISTRESS LINK COPIED TO CLIPBOARD</p>
+  </div>
+
+  <!-- MAIN GAME CONTAINER (Initially Hidden) -->
+  <div id="game-container" style="display: none;">
+    <div class="header">
+      <div class="floor-display" id="floor-num">FL 01</div>
+      <div class="status-display">
+        <div class="status-text" id="status-label">STATUS</div>
+        <div class="timer-text" id="timer-display">SAFE</div>
+      </div>
+    </div>
+
+    <div id="viewscreen">
+      <div class="door-indicator" id="door-status">ELEVATOR IDLE</div>
+      <div id="log">You step into Floor 1. Something heavy groans below.</div>
+      
+      <div id="puzzle-box">
+        <div id="puzzle-instruction">Solve the override sequence:</div>
+        <input type="text" id="puzzle-input" class="puzzle-input" autocomplete="off">
+        <button id="submit-btn" class="btn-danger">SUBMIT OVERRIDE</button>
+      </div>
+
+      <div class="monster-proximity">
+        <div class="monster-bar" id="monster-bar"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="ascend-btn">ASCEND FLOOR</button>
+    </div>
+  </div>
+
+  <!-- JUMP SCARE OVERLAY (Hidden by default) -->
+  <div id="jumpscare-overlay" style="display: none;">
+    <pre id="ascii-face">
+    .  .  .  .  .  .  .  .  .  .
+  (   O   )      (   O   )
+      ___          ___
+     /   \        /   \
+    |  X  |      |  X  |
+     \___/        \___/
+         /\______/\
+        /  vvvvvv  \
+       |   ======   |
+        \  ^^^^^^  /
+         \________/
+    </pre>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

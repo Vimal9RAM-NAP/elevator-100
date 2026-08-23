@@ -1,0 +1,331 @@
+:root {
+  --bg-color: #08080a;
+  --panel-color: #151518;
+  --accent-red: #ff3333;
+  --accent-green: #33ff66;
+  --text-color: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* --- CREEPY START SCREEN --- */
+#start-screen {
+  width: 480px;
+  height: 640px;
+  background-color: var(--panel-color);
+  border: 4px solid #3a0808;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 25px;
+  position: relative;
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.static-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,0.02), rgba(0,0,0,0.85) 2px);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.glitch-title {
+  font-size: 2.8rem;
+  color: var(--accent-red);
+  letter-spacing: 5px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 0px #500, -2px -2px 0px #000;
+  animation: subtleGlitch 3s infinite alternate;
+}
+
+@keyframes subtleGlitch {
+  0% { transform: skew(0deg); }
+  95% { transform: skew(0deg); }
+  96% { transform: skew(3deg); }
+  97% { transform: skew(-2deg); }
+  100% { transform: skew(0deg); }
+}
+
+.subtitle {
+  color: #775555;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-top: -15px;
+}
+
+.instructions-box {
+  background: rgba(10, 3, 3, 0.9);
+  border-left: 3px solid var(--accent-red);
+  border-right: 1px solid #222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 14px 16px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #bfaaaa;
+  text-align: left;
+  width: 100%;
+}
+
+.warning-header {
+  color: var(--accent-red);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.menu-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-creepy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #110505;
+  color: #ddcccc;
+  border: 1px solid #441111;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-creepy.primary {
+  background: #660000;
+  color: #ffffff;
+  border-color: #aa0000;
+}
+
+.btn-creepy:hover {
+  background: #990000;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+}
+
+.toast-hidden {
+  opacity: 0;
+  font-size: 0.75rem;
+  color: var(--accent-green);
+  transition: opacity 0.3s ease;
+  height: 15px;
+}
+
+.toast-visible {
+  opacity: 1;
+}
+
+/* --- MAIN GAME CONTAINER --- */
+#game-container {
+  width: 480px;
+  height: 640px;
+  background-color: var(--panel-color);
+  border: 4px solid #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0c;
+  padding: 15px;
+  border: 2px solid #222;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.floor-display {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--accent-red);
+  text-shadow: 0 0 8px rgba(255, 51, 51, 0.6);
+}
+
+.status-text {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.timer-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#viewscreen {
+  flex: 1;
+  background: #000;
+  border: 2px solid #222;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.door-indicator {
+  position: absolute;
+  top: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.monster-proximity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #222;
+}
+
+.monster-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--accent-red);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px var(--accent-red);
+}
+
+#log {
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+#puzzle-box {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.puzzle-input {
+  background: #111;
+  border: 1px solid var(--accent-red);
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  background: #222;
+  border: 2px solid #444;
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover:not(:disabled) {
+  background: #333;
+  border-color: #666;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+
+.flicker {
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.9; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.jumpscare {
+  background-color: var(--accent-red) !important;
+  color: #000 !important;
+}
+/* ASCII Jump Scare Screen */
+#jumpscare-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background-color: #000;
+  color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+  animation: shake 0.1s infinite;
+}
+
+#ascii-face {
+  font-family: monospace;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 0 0 15px #ff0000;
+  line-height: 1.1;
+  text-align: center;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  40% { transform: translate(1px, -1px) rotate(-1deg); }
+  60% { transform: translate(-2px, 1px) rotate(0deg); }
+  80% { transform: translate(2px, 1px) rotate(1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
