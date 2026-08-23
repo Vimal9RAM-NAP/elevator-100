@@ -14,7 +14,7 @@
 
 ### 🕹️ Play Directly in Browser
 
-<iframe src="https://itch.io/embed-upload/18919138?color=333333" allowfullscreen="" width="522" height="670" frameborder="0"><a href="https://vimal9ram-nap.itch.io/elevator-100">Play Elevator 100: Descent into Fear on itch.io</a></iframe>
+[![Play Elevator 100 on itch.io](https://img.shields.io/badge/▶_CLICK_TO_PLAY_IN_BROWSER-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://vimal9ram-nap.itch.io/elevator-100)
 
 </div>
 
