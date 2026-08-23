@@ -1,34 +1,60 @@
+<div align="center">
+
+![Elevator 100 Cover Banner](logo10.jpg)
+
 # 🚪 ELEVATOR 100: Descent into Fear
 
 > **Emergency Override Protocol Active.** The lower shaft has collapsed. The entity ascends at 3 meters per second. Ascend 100 floors before hydraulic seal failure.
 
-**Elevator 100** is a lightweight, self-contained browser horror game built entirely with native web technologies. Designed for zero-dependency execution, low memory overhead, and dark atmospheric immersion.
+[![Play on itch.io](https://img.shields.io/badge/Play_on-itch.io-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://vimal9ram-nap.itch.io/elevator-100)
+[![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://vimal9ram-nap.github.io/elevator-100/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+## 📖 Overview
+
+**Elevator 100** is a lightweight, atmospheric HTML5 horror survival game built entirely with native web technologies. Designed for zero-dependency execution, minimal memory overhead, and immersive retro CRT tension.
+
+---
+
+## 📸 Screenshots & Showcase
+
+| Start Interface & High Score | Terminal Passenger Logs |
+| :---: | :---: |
+| ![Start Screen](Screenshot_2026-08-23_15-01-37.jpg) | ![Passenger Log](Screenshot_2026-08-23_15-01-53.png) |
+
+| System Error Override Hazard | Entity Visual Jumpscare |
+| :---: | :---: |
+| ![Override Hazard](Screenshot_2026-08-23_15-02-08.png) | ![Entity Visual Jumpscare](Screenshot_2026-08-23_15-38-38.png) |
 
 ---
 
 ## 🕹️ Key Features
 
-- **Procedural Sub-System Hazards:** Dynamic text-based override sequences on active hazard floors.
-- **Pure Web Audio Synthesizer:** Custom procedural sound effects generated on-the-fly without external audio assets.
-- **Passenger Lore System:** Uncover terminal logs left behind by previous elevator passengers.
-- **Distress Signal Sharing:** Dynamic URL generation allowing players to share custom floor progress links.
-- **Local Persistence:** Automatic high-score tracking via browser `localStorage`.
+* **Procedural Sub-System Hazards:** Dynamic text-based code overrides on stalled hazard floors under a strict countdown timer.
+* **Pure Web Audio Synthesizer:** Real-time procedural audio synthesis generated on-the-fly with native Web Audio API oscillators — zero external sound files downloaded.
+* **Passenger Lore Terminal:** Uncover terminal notes and eerie logs left behind by previous elevator victims as you ascend.
+* **Distress Signal Link Sharing:** Built-in dynamic URL parameters allow players to share custom progress and distress links with friends.
+* **Local Ascent Tracking:** High scores and deepest floor records are tracked automatically using browser `localStorage`.
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
-- **HTML5 & CSS3:** Responsive UI grid, CRT/glitch aesthetic, custom animations.
-- **JavaScript (ES6+):** Game loop state management, event listeners.
-- **Web Audio API:** Real-time low-frequency audio oscillator graphs.
+* **HTML5 & CSS3:** Custom CRT scanline effects, glowing ambient drop-shadows, and responsive layout.
+* **JavaScript (ES6+):** Async game logic state management and mathematical puzzle generators.
+* **Web Audio API:** Custom oscillator graphs generating real-time low-frequency ambient hums, alarms, and jumpscare soundscapes.
 
 ---
 
-## 🚀 Running Locally
+## 🚀 How to Run Locally
 
-No build steps or package managers required.
+Because the game uses native web technology, no build steps, node modules, or external servers are required.
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone [https://github.com/Vimal9RAM-NAP/elevator-100.git](https://github.com/Vimal9RAM-NAP/elevator-100.git)
    ```
