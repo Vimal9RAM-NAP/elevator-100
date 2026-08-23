@@ -1,12 +1,12 @@
 <div align="center">
 
-![Elevator 100 Cover Banner](logo10.jpg)
+![Elevator 100 Cover Banner](logo.jpg)
 
 # 🚪 ELEVATOR 100: Descent into Fear
 
 > **Emergency Override Protocol Active.** The lower shaft has collapsed. The entity ascends at 3 meters per second. Ascend 100 floors before hydraulic seal failure.
 
-[![Play on itch.io](https://img.shields.io/badge/Play_on-itch.io-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://vimal9ram-nap.itch.io/elevator-100)
+[![Play on itch.io](https://img.shields.io/badge/Play_on-itch.io-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://itch.io/embed-upload/18919138?color=333333)
 [![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://vimal9ram-nap.github.io/elevator-100/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
@@ -22,31 +22,31 @@
 
 ## 📸 Screenshots & Showcase
 
-| Start Interface & High Score | Terminal Passenger Logs |
-| :---: | :---: |
-| ![Start Screen](Screenshot_2026-08-23_15-01-37.jpg) | ![Passenger Log](Screenshot_2026-08-23_15-01-53.png) |
+| Start Interface & High Score |     Terminal Passenger Logs     |
+| :--------------------------: | :-----------------------------: |
+|  ![Start Screen](start.jpg)  | ![Passenger Log](passenger.png) |
 
-| System Error Override Hazard | Entity Visual Jumpscare |
-| :---: | :---: |
-| ![Override Hazard](Screenshot_2026-08-23_15-02-08.png) | ![Entity Visual Jumpscare](Screenshot_2026-08-23_15-38-38.png) |
+|  System Error Override Hazard  |          Entity Visual Jumpscare          |
+| :----------------------------: | :---------------------------------------: |
+| ![Override Hazard](hazard.png) | ![Entity Visual Jumpscare](jumpscare.png) |
 
 ---
 
 ## 🕹️ Key Features
 
-* **Procedural Sub-System Hazards:** Dynamic text-based code overrides on stalled hazard floors under a strict countdown timer.
-* **Pure Web Audio Synthesizer:** Real-time procedural audio synthesis generated on-the-fly with native Web Audio API oscillators — zero external sound files downloaded.
-* **Passenger Lore Terminal:** Uncover terminal notes and eerie logs left behind by previous elevator victims as you ascend.
-* **Distress Signal Link Sharing:** Built-in dynamic URL parameters allow players to share custom progress and distress links with friends.
-* **Local Ascent Tracking:** High scores and deepest floor records are tracked automatically using browser `localStorage`.
+- **Procedural Sub-System Hazards:** Dynamic text-based code overrides on stalled hazard floors under a strict countdown timer.
+- **Pure Web Audio Synthesizer:** Real-time procedural audio synthesis generated on-the-fly with native Web Audio API oscillators — zero external sound files downloaded.
+- **Passenger Lore Terminal:** Uncover terminal notes and eerie logs left behind by previous elevator victims as you ascend.
+- **Distress Signal Link Sharing:** Built-in dynamic URL parameters allow players to share custom progress and distress links with friends.
+- **Local Ascent Tracking:** High scores and deepest floor records are tracked automatically using browser `localStorage`.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **HTML5 & CSS3:** Custom CRT scanline effects, glowing ambient drop-shadows, and responsive layout.
-* **JavaScript (ES6+):** Async game logic state management and mathematical puzzle generators.
-* **Web Audio API:** Custom oscillator graphs generating real-time low-frequency ambient hums, alarms, and jumpscare soundscapes.
+- **HTML5 & CSS3:** Custom CRT scanline effects, glowing ambient drop-shadows, and responsive layout.
+- **JavaScript (ES6+):** Async game logic state management and mathematical puzzle generators.
+- **Web Audio API:** Custom oscillator graphs generating real-time low-frequency ambient hums, alarms, and jumpscare soundscapes.
 
 ---
 
