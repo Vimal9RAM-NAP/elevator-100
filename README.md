@@ -1,14 +1,20 @@
 <div align="center">
 
-![Elevator 100 Cover Banner](logo.jpg)
+<img src="assets/logo.png" alt="Elevator 100 Cover Banner" width="100%">
 
 # 🚪 ELEVATOR 100: Descent into Fear
 
 > **Emergency Override Protocol Active.** The lower shaft has collapsed. The entity ascends at 3 meters per second. Ascend 100 floors before hydraulic seal failure.
 
-[![Play on itch.io](https://img.shields.io/badge/Play_on-itch.io-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://itch.io/embed-upload/18919138?color=333333)
+[![Play on itch.io](https://img.shields.io/badge/Play_on-itch.io-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://vimal9ram-nap.itch.io/elevator-100)
 [![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://vimal9ram-nap.github.io/elevator-100/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+---
+
+### 🕹️ Play Directly in Browser
+
+<iframe src="https://itch.io/embed-upload/18919138?color=333333" allowfullscreen="" width="522" height="670" frameborder="0"><a href="https://vimal9ram-nap.itch.io/elevator-100">Play Elevator 100: Descent into Fear on itch.io</a></iframe>
 
 </div>
 
@@ -22,13 +28,13 @@
 
 ## 📸 Screenshots & Showcase
 
-| Start Interface & High Score |     Terminal Passenger Logs     |
-| :--------------------------: | :-----------------------------: |
-|  ![Start Screen](start.jpg)  | ![Passenger Log](passenger.png) |
+|       Start Interface & High Score       |           Terminal Passenger Logs            |
+| :--------------------------------------: | :------------------------------------------: |
+| <img src="assets/start.png" width="400"> | <img src="assets/passenger.png" width="400"> |
 
-|  System Error Override Hazard  |          Entity Visual Jumpscare          |
-| :----------------------------: | :---------------------------------------: |
-| ![Override Hazard](hazard.png) | ![Entity Visual Jumpscare](jumpscare.png) |
+|       System Error Override Hazard        |           Entity Visual Jumpscare            |
+| :---------------------------------------: | :------------------------------------------: |
+| <img src="assets/hazard.png" width="400"> | <img src="assets/jumpscare.png" width="400"> |
 
 ---
 
