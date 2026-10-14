@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" alt="Elevator 100 Cover Banner" width="100%">
 
-# 🚪 ELEVATOR 100: Descent into Fear
+#  ELEVATOR 100: Descent into Fear
 
 > **Emergency Override Protocol Active.** The lower shaft has collapsed. The entity ascends at 3 meters per second. Ascend 100 floors before hydraulic seal failure.
 
@@ -12,7 +12,7 @@
 
 ---
 
-### 🕹️ Play Directly in Browser
+###  Play Directly in Browser
 
 [![Play Elevator 100 on itch.io](https://img.shields.io/badge/▶_CLICK_TO_PLAY_IN_BROWSER-ff2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://vimal9ram-nap.itch.io/elevator-100)
 
@@ -20,13 +20,13 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **Elevator 100** is a lightweight, atmospheric HTML5 horror survival game built entirely with native web technologies. Designed for zero-dependency execution, minimal memory overhead, and immersive retro CRT tension.
 
 ---
 
-## 📸 Screenshots & Showcase
+##  Screenshots & Showcase
 
 |       Start Interface & High Score       |           Terminal Passenger Logs            |
 | :--------------------------------------: | :------------------------------------------: |
@@ -38,7 +38,7 @@
 
 ---
 
-## 🕹️ Key Features
+##  Key Features
 
 - **Procedural Sub-System Hazards:** Dynamic text-based code overrides on stalled hazard floors under a strict countdown timer.
 - **Pure Web Audio Synthesizer:** Real-time procedural audio synthesis generated on-the-fly with native Web Audio API oscillators — zero external sound files downloaded.
@@ -48,7 +48,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **HTML5 & CSS3:** Custom CRT scanline effects, glowing ambient drop-shadows, and responsive layout.
 - **JavaScript (ES6+):** Async game logic state management and mathematical puzzle generators.
@@ -56,7 +56,7 @@
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 Because the game uses native web technology, no build steps, node modules, or external servers are required.
 
@@ -72,6 +72,6 @@ Because the game uses native web technology, no build steps, node modules, or ex
 
 3. Open index.html in any web browser.
 
-## 📄 License
+##  License
 
 Distributed under the MIT License. See LICENSE for more information.
